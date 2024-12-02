@@ -1,0 +1,85 @@
+body {
+    background-color: rgb(191 239 255);
+}
+
+ul {
+    background-color: grey;
+    width: 150px;
+    font-weight: 500;
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+a {
+    display: block;
+    padding: 10px;
+    padding-left: 40px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+a.edit {
+    background-image: url('./hw_6_icons/edit.png');
+    background-repeat: no-repeat;
+    background-size: 40px;
+}
+
+a.favorites {
+    background-image: url('./hw_6_icons/favorites.png');
+    background-repeat: no-repeat;
+    background-size: 40px;
+}
+
+a.history {
+    background-image: url('hw_6_icons/history.png');
+    background-repeat: no-repeat;
+    background-size: 40px;
+}
+
+a.security {
+    background-image: url('./hw_6_icons/security.png');
+    background-repeat: no-repeat;
+    background-size: 40px;
+}
+
+a.settings {
+    background-image: url('./hw_6_icons/settings.png');
+    background-repeat: no-repeat;
+    background-size: 40px;
+}
+
+.edit:hover {
+    background-color: rgb(75, 74, 74);
+    background-image: url('./hw_6_icons/edit.png');
+    background-repeat: no-repeat;
+    background-size: 40px;
+}
+
+.favorites:hover {
+    background-color: rgb(75, 74, 74);
+    background-image: url('./hw_6_icons/favorites.png');
+    background-repeat: no-repeat;
+    background-size: 40px;
+}
+
+.history:hover {
+    background-color: rgb(75, 74, 74);
+    background-image: url('./hw_6_icons/history.png');
+    background-repeat: no-repeat;
+    background-size: 40px;
+}
+
+.security:hover {
+    background-color: rgb(75, 74, 74);
+    background-image: url('./hw_6_icons/security.png');
+    background-repeat: no-repeat;
+    background-size: 40px;
+}
+
+.settings:hover {
+    background-color: rgb(75, 74, 74);
+    background-image: url('./hw_6_icons/settings.png');
+    background-repeat: no-repeat;
+    background-size: 40px;
+}
