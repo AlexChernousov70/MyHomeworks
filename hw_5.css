@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(191 239 255);
+}
+
+h1 {
+    font-family: Calibri;
+}
+
+figure {
+    float: left;
+    width: 200px;
+    height: 225px;
+    margin: 15px;
+    padding: 20px;
+    background-color: aliceblue;
+    border: 1px solid rgb(99, 25, 25);
+    border-color: rgb(99, 25, 25);
+    border-radius: 10px;
+    text-align: center;
+    opacity: .7;
+    box-shadow: -4px 5px 5px 2px rgb(83, 81, 81);
+    transition: .3s;
+}
+
+figure:hover {
+    opacity: 1;
+}
+
+img {
+    margin: 15px;
+}
+
+figcaption {
+    margin: 15px;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+p {
+    font-size: large;
+    font-weight: 600;
+}
+
+.clear {
+    clear: both;
+    text-align: center;
+}
