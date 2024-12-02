@@ -1,0 +1,52 @@
+.nav {
+  background-color: aliceblue;
+}
+
+.body {
+  background: #d3cece;
+}
+
+.book-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  max-width: 300px;
+  padding: 1ex;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card-author {
+  font-weight: bold;
+  color: #555;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-img-top {
+  max-height: 400px; 
+  /* Ограничиваем максимальную высоту изображения */
+  width: auto;
+  object-fit: contain; 
+  /* Сохраняем пропорции и избегаем обрезки */
+  margin: 0 auto; /* Центрируем изображение */
+  display: block; /* Обеспечиваем правильное выравнивание */
+}
+
+.footer {
+  border-top-width: 1px;
+  border-top-style: solid;
+  background-color: aliceblue;
+  margin-top: 1ex;
+
+}
+
+.copyright-sign {
+  text-align: center;
+}
