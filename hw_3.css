@@ -1,0 +1,31 @@
+body {
+    background-color: rgb(209, 216, 213);
+}
+
+ol {
+    color: aliceblue;
+    margin: 20px auto;
+    padding: 1px;
+    width: 300px;
+    min-width: 250px;
+    list-style-position: inside;
+    background-color: rgb(235, 112, 112);
+}
+
+li {
+    margin: 8px;
+    padding: 5px;
+    background-color: rgb(184, 48, 48);
+}
+
+span {
+    color: aliceblue;
+
+    /* Запись ниже можно упростить до padding: 5px 10px;, где первое значение 5px будет указывать на отступы сверху и снизу (вертикальные отступы), а второе 10px будет указывать на отступы справа и слева (горизонтальные отступы). */
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /*  */
+
+    background-color: rgb(97, 0, 0);
+}
