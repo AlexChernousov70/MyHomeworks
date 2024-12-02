@@ -1,0 +1,39 @@
+body {
+    background-color: aliceblue;
+}
+
+h3 {
+    text-align: center;
+}
+
+ul {
+    margin: 20px auto;
+    padding: 1px;
+    width: 300px;
+    min-width: 250px;
+    list-style-position: inside;
+    list-style-image: url(./hw_4_icons/notcompleted.png);
+}
+
+li {
+    padding: 5px;
+    list-style-position: inside;
+}
+
+li:nth-child(2n) {
+    background-color: rgb(131, 255, 127);
+}
+
+li:nth-child(2n+1) {
+background-color: rgb(127, 246, 255);
+}
+
+li::after {
+    content: ' \2716';
+    color: red;
+}
+
+li.completed {
+    background-color: lightgrey;
+    list-style-image: url(./hw_4_icons/completed.png);
+}
