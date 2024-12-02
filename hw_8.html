@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ДЗ-8_Черноусов Алексей</title>
+</head>
+<body>
+    <script>
+        let spisok = prompt("Введите свои покупки, разделяя слова пробелами");
+
+        let arraySpisok = spisok.split(" ");
+        console.log(arraySpisok);
+
+        alert(`В Вашем списке покупок ${arraySpisok.length} элементов`);
+        let index = parseInt(prompt(`Введите номер элемента из списка от 1 до ${arraySpisok.length}`));
+
+        if (index >= 1 & index <= arraySpisok.length) {
+            alert(`Выбранный элемент ${arraySpisok[index-1].trim()}`);
+            let newElement = prompt("Хотите ли заменить выбранный элемент?");
+
+            if (newElement){
+                arraySpisok[index-1] = newElement
+            };
+
+            alert(`Обновленный список покупок: ${arraySpisok.join(", ")}`);
+        }
+        else alert("Введено неверное значение, перезагрузите страницу");
+    </script>
+</body>
+</html>
