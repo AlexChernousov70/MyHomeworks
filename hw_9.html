@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Расшифровка</title>
+</head>
+<body>
+   <script>
+      // Секретное послание
+      const secretLetter = [
+        ['DFВsjl24sfFFяВАДОd24fssflj234'],
+        ['asdfFп234рFFdо24с$#afdFFтasfо'],
+        ['оafбasdf%^о^FFжа$#af243ю'],
+        ['afпFsfайFтFsfо13н'],
+        ['fн13Fа1234де123юsdсsfь'],
+        ['чFFтF#Fsfsdf$$о'],
+        ['и$##sfF'],
+        ['вSFSDам'],
+        ['пSFоsfнрSDFаSFвSDF$иFFтsfaсSFя'],
+        ['FFэasdfтDFsfоasdfFт'],
+        ['FяDSFзFFsыSfкFFf']
+      ];
+
+      // Массив с маленькими русскими буквами
+      const smallRus = ['а', 'б', 'в', 'г', 'д', 'е', 'ё', 'ж', 'з', 'и',
+        'й', 'к', 'л', 'м', 'н', 'о', 'п', 'р', 'с', 'т', 'у', 'ф',
+        'х', 'ц', 'ч', 'ш', 'щ', 'ъ', 'ы', 'ь', 'э', 'ю', 'я'
+      ];
+      // объявление пустого массива unsecretLetter в котором будет результат
+      let unsecretLetter = [];
+      // перебор элементов массива secretLetter с секретным посланием 
+      for (let elements of secretLetter) { 
+        // добавление пробела между расшифрованными словами
+        unsecretLetter.push(' ');
+        // цикл for внутри цикла for с индексом 0, так как внутри внутренних массивов один элемент - для перебора каждого символа
+        for (let char of elements[0]) {
+          // условие если содержиться символ с маленькими русскими буквами - то добавить к рассекреченному письму
+          if (smallRus.includes(char))
+          unsecretLetter.push(char);
+        };
+      };
+    // перевод массива с рассекреченными символами на соединенную строку с помощью join. удаление вывод в консоль
+    console.log(unsecretLetter.join("").trim());
+  </script>
+</body>
+</html>
