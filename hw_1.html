@@ -1,0 +1,70 @@
+
+<!-- Традиционное имя для HTML-файла главной страницы – это имя index -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Можно установить веб-странице информативное и узнаваемое имя -->
+    <title>index</title>
+
+    <style>
+        h1 {
+            text-align: center;
+            font-weight: 800;
+            color: blueviolet;
+        }
+        h3 {
+            color:rgb(94, 94, 180);
+            /* В завершении установки свойство-значение стоит указывать точку с запятой. Также после двоеточия стоит использовать пробел. */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Romeo and Juliet</h1>
+    
+    <h3>ACT 1</h3>
+    
+    <h3>PROLOGUE</h3>
+
+    <pre><!-- не использовал <pre> так как текст съезжал вправо... можно было оставить pre, но тогда нарушается чистота кода  ¯\_(ツ)_/¯-->
+        <!-- Такое решение также является верным -->
+
+    <!-- Вложенный код внутри HTML-элементов должен располагаться на одной вертикальной линии и иметь единый отступ слева вправо относительно вертикальной линии, формируемой тегами родительского элемента (в данном случае элемента p), в который вложен код. -->
+
+Two households, both alike in dignity,
+In fair Verona, where we lay our scene,
+From ancient grudge break to new mutiny,
+Where civil blood makes civil hands unclean.
+From forth the fatal loins of these two foes
+A pair of star-cross'd lovers take their life;
+Whose misadventured piteous overthrows
+Do with their death bury their parents' strife.
+The fearful passage of their death-mark'd love,
+And the continuance of their parents' rage,
+Which, but their children's end, nought could remove,
+Is now the two hours' traffic of our stage;
+The which if you with patient ears attend,
+
+    <!-- Последний br не нужен, т.к. за последней строкой текста нет следующей, которую нужно перенести -->
+    What here shall miss, our toil shall strive to mend.<br>
+
+    </pre>
+
+    <h3>SCENE I. Verona. A public place.</h3>
+
+    <!-- Элементы i размечают части абзацев (слова, предложения) и поэтому должны находится в элементах p, размечающих целые абзацы, или подобных им. Это станет понятнее, когда мы разберём строчные и блочные элементы. -->
+    <i>Enter SAMPSON and GREGORY, of the house of Capulet, armed with swords and bucklers</i> 
+
+    <h3>SAMPSON</h3>
+    <p>Gregory, o' my word, we'll not carry coals.</p> 
+
+    <h3>GREGORY</h3>
+    <p>No, for then we should be colliers.</p> 
+
+</body>
+</html>
